@@ -13,7 +13,7 @@ def get_data():
         "Accept": "application/json",
     }
 
-  response = requests.get(API_URL, headers=headers, timeout=20)
+response = requests.get(API_URL, headers=headers, timeout=20)
 
 print("状态码：", response.status_code)
 print("响应头：", response.headers)
