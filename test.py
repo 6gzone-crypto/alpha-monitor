@@ -2,7 +2,7 @@ import os
 import requests
 from datetime import datetime
 
-API_URL = "https://alpha123.uk/api/data?fresh=0"
+API_URL = "https://alpha123.uk/api/data?fresh=1"
 XTUIS_TOKEN = os.getenv("XTUIS_TOKEN")
 
 
