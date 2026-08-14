@@ -13,8 +13,13 @@ def get_data():
         "Accept": "application/json",
     }
 
-    response = requests.get(API_URL, headers=headers, timeout=20)
-    response.raise_for_status()
+  response = requests.get(API_URL, headers=headers, timeout=20)
+
+print("状态码：", response.status_code)
+print("响应头：", response.headers)
+print("响应内容：", response.text[:1000])
+
+response.raise_for_status()
 
     return response.json()
 
